@@ -1,0 +1,174 @@
+/* ═══════════════════════════════════════════════════════
+   E-Commerce · Patron Visitor — Hoja de estilos JavaFX
+   Autor: Juan Manuel Vera  |  v1.0
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Raiz ──────────────────────────────────────────────── */
+.root-container {
+    -fx-background-color: #EEF2F7;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ── Encabezado ────────────────────────────────────────── */
+.header {
+    -fx-background-color: linear-gradient(to right, #1A2B4A, #2C4A7C);
+}
+
+.header-title {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.header-sub {
+    -fx-text-fill: #A8C4E0;
+    -fx-font-size: 11px;
+}
+
+/* ── Area de contenido ─────────────────────────────────── */
+.content {
+    -fx-background-color: #EEF2F7;
+}
+
+/* ── Titulos de seccion ────────────────────────────────── */
+.section-title {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A2B4A;
+}
+
+/* ── Tarjeta (card) ────────────────────────────────────── */
+.card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(26, 43, 74, 0.10), 12, 0, 0, 4);
+    -fx-padding: 18;
+}
+
+/* ── RadioButtons ──────────────────────────────────────── */
+.radio-option {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+    -fx-cursor: hand;
+}
+
+.radio-hint {
+    -fx-font-size: 11px;
+    -fx-text-fill: #7F8C9A;
+    -fx-padding: -6 0 4 0;
+}
+
+/* ── Boton principal ───────────────────────────────────── */
+.btn-aplicar {
+    -fx-background-color: #2563EB;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 11 20;
+    -fx-cursor: hand;
+}
+
+.btn-aplicar:hover {
+    -fx-background-color: #1D4ED8;
+    -fx-effect: dropshadow(gaussian, rgba(37, 99, 235, 0.35), 8, 0, 0, 2);
+}
+
+.btn-aplicar:pressed {
+    -fx-background-color: #1E40AF;
+}
+
+/* ── Area de resultados ────────────────────────────────── */
+.results-area {
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #1A2B4A;
+    -fx-control-inner-background: #F7F9FC;
+    -fx-background-color: #F7F9FC;
+    -fx-border-color: #D1DCE8;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+/* ── Etiqueta de resumen ───────────────────────────────── */
+.summary-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #16A34A;
+}
+
+/* ── Tabla de productos ────────────────────────────────── */
+.product-table {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(26, 43, 74, 0.10), 12, 0, 0, 4);
+}
+
+.product-table .column-header-background {
+    -fx-background-color: #EBF1FA;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.product-table .column-header .label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C4A7C;
+}
+
+.product-table .table-row-cell {
+    -fx-border-color: transparent transparent #EEF2F7 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.product-table .table-row-cell:odd {
+    -fx-background-color: #FAFBFD;
+}
+
+.product-table .table-row-cell:even {
+    -fx-background-color: #FFFFFF;
+}
+
+.product-table .table-row-cell:selected {
+    -fx-background-color: #DBEAFE;
+    -fx-text-fill: #1A2B4A;
+}
+
+/* ── Chips de leyenda ──────────────────────────────────── */
+.legend-chip-libro {
+    -fx-background-color: #DCFCE7;
+    -fx-text-fill: #15803D;
+    -fx-font-size: 11px;
+    -fx-background-radius: 20;
+    -fx-padding: 3 10;
+    -fx-font-weight: bold;
+}
+
+.legend-chip-elec {
+    -fx-background-color: #DBEAFE;
+    -fx-text-fill: #1D4ED8;
+    -fx-font-size: 11px;
+    -fx-background-radius: 20;
+    -fx-padding: 3 10;
+    -fx-font-weight: bold;
+}
+
+.legend-chip-ropa {
+    -fx-background-color: #FEF9C3;
+    -fx-text-fill: #92400E;
+    -fx-font-size: 11px;
+    -fx-background-radius: 20;
+    -fx-padding: 3 10;
+    -fx-font-weight: bold;
+}
+
+/* ── Pie de pagina ─────────────────────────────────────── */
+.footer {
+    -fx-background-color: #1A2B4A;
+}
+
+.footer-text {
+    -fx-text-fill: #7A94B4;
+    -fx-font-size: 11px;
+}

@@ -6,22 +6,17 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * entrada a la aplicacion de comercio electronico con patron Visitor hecha en JavaFX.
+ * Punto de entrada de la aplicacion JavaFX de comercio electronico con patron Visitor.
  *
- * <p>extiende {@link Application} e inicia la interfaz grafica cargando el
- * archivo FXML principal. el catalogo de productos se inicializa de forma
- * diferida en el primer acceso al Singleton {@code CatalogoProductos},
- * manteniendo esta clase con una unica responsabilidad: arrancar la UI.</p>
- *
- * @author Samuel Marín Varón
+ * @author Samuel Marin Varon
  * @version 1.0
  */
 public class MainApp extends Application {
 
     /**
-     * inicializa y muestra la ventana principal de la aplicacion.
+     * Carga el FXML principal y muestra la ventana de la aplicacion.
      *
-     * @param stage ventana principal proporcionada por el entorno JavaFX.
+     * @param stage ventana principal de JavaFX.
      * @throws Exception si el archivo FXML no se encuentra o falla al cargarse.
      */
     @Override
@@ -38,11 +33,7 @@ public class MainApp extends Application {
         stage.show();
     }
 
-    /**
-     * punto de entrada de la maquina virtual Java.
-     *
-     * @param args argumentos de linea de comandos (no utilizados).
-     */
+    /** @param args argumentos de linea de comandos (no utilizados). */
     public static void main(String[] args) {
         launch(args);
     }
